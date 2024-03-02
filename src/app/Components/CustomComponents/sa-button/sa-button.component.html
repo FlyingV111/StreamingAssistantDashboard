@@ -1,5 +1,5 @@
 <button class="sa_button">
-    <span class="sa_button_lg">
+    <span class="sa_button_lg" [ngClass]="{ 'primary': Type === Sa_button_types.primary, 'secondary': Type === Sa_button_types.secondary }">
         <span class="sa_button_sl"></span>
         <span class="sa_button_text"><ng-content></ng-content></span>
     </span>

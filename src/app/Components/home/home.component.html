@@ -1,3 +1,4 @@
+<img class="background" ngSrc="assets/background.svg" alt="" fill>
 <main>
   <nav class="navbar">
     <a tabindex="0" routerLink="/home" class="icon"></a>
@@ -6,6 +7,19 @@
       <li tabindex="2">Changelogs</li>
       <li tabindex="3">Documentation</li>
     </ul>
-    <sa-button tabindex="4">Invite</sa-button>
+    <sa-button [Type]="Sa_button_types.primary" tabindex="4">Login with Discord</sa-button>
   </nav>
+  <div class="container">
+    <div class="infos">
+      <h1 class="headline">Streaming Assistant</h1>
+      <div class="moreInfos">
+        <p>Streamline waiting room management with Streaming Assistant! Handle large crowds effortlessly, ensuring
+          smooth transitions and engaged viewers.</p>
+        <div class="btnGroup">
+          <sa-button [Type]="Sa_button_types.primary" tabindex="5">Contact Us</sa-button>
+          <sa-button [Type]="Sa_button_types.secondary" tabindex="6">Read More</sa-button>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
